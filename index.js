@@ -21,7 +21,7 @@ const commands = {
             str += element+"\n"
         })
 
-        let comando = input.question(`Que comando deseja executar?\n${str}\n`)
+        let comando = input.question(`Que comando deseja executar?\n\n${str}\n`)
         if (comando === "buscar") {
             let cep = input.question('Digite o CEP (apenas numeros)\n')
             commands.buscar(cep)
